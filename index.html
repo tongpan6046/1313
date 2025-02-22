@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>十三張記錄</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <h1>十三張注數記錄</h1>
+    <div class="input-section">
+        <input type="text" id="playerName" placeholder="輸入玩家名稱">
+        <button onclick="addPlayer()">新增玩家</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>玩家</th>
+                <th>分數</th>
+                <th>輸入注數</th>
+            </tr>
+        </thead>
+        <tbody id="playerTable">
+        </tbody>
+    </table>
+
+    <div class="button-container">
+        <button onclick="submitRound()">提交本局</button>
+        <button onclick="resetGame()">重置遊戲</button>
+        <button onclick="undoLastAction()">撤銷</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
